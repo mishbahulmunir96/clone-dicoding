@@ -7,10 +7,12 @@
   --bg: #fff;
   --bgsecondary: #f4f4f5;
 }
-body {
-  font-family: "Quicksand", sans-serif;
+* {
   margin: 0;
   padding: 0;
+}
+body {
+  font-family: "Quicksand", sans-serif;
 }
 
 /* header/navbar */
@@ -231,51 +233,186 @@ main {
 
 /* programs section */
 .programs {
-  height: 60vh;
+  display: flex;
+  align-items: center;
+  height: 65vh;
   background: var(--bgsecondary);
-  border: 1px solid black;
 }
 .programs .container {
   display: flex;
-  border: 1px solid black;
+  height: 70%;
+  justify-content: space-between;
 }
-.programs .container .programs-headline {
-  width: 40%;
-  color: var(--font-color);
-  border: 1px solid black;
-}
-.programs .container .programs-swiper {
-  width: 60%;
-  border: 1px solid black;
-}
-.programs .container .programs-swiper .arrow img {
-  width: 30px;
-}
-.programs .container .programs-swiper .swip-container {
+.programs .container .container-headline {
   display: flex;
+  justify-content: center;
+  width: 40%;
 }
-.programs .container .programs-swiper .swip-container .slide-aws,
-.programs .container .programs-swiper .swip-container .slide-dbs {
-  width: 35rem;
-  height: 12rem;
-  border: 1px solid black;
+.programs .container .container-headline .program-headline {
+  width: 70%;
+  height: auto;
+  color: var(--font-color);
+}
+.program-headline h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.programs .container .programs-swiper {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 1rem;
+  border: 1px solid red;
+}
+
+.programs-swiper .arrow {
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+}
+.programs-swiper .arrow img {
+  width: 30px;
+  margin: 0 0.5rem;
+}
+.programs-swiper .swip-container {
+  display: flex;
+  width: 95%;
+  border: 1px solid blue;
+}
+.programs-swiper .swip-container .slide-aws,
+.programs-swiper .swip-container .slide-dbs {
+  width: 576px;
+  height: 208px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background: var(--bg);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 }
 .programs .container .programs-swiper .swip-container .slide-aws a {
   text-decoration: none;
   display: flex;
+  width: auto;
+  height: 10rem;
+  margin: 1.25rem;
+}
+
+.programs .container .programs-swiper .swip-container img {
+  width: 10rem;
+  margin-right: 1.25rem;
 }
 
 .program-card p,
 .program-card span {
   font-size: 0.8rem;
   color: var(--font-color);
+  margin: 0;
 }
 .program-card h5 {
   font-size: 1.2rem;
   font-weight: 500;
   color: var(--font-color);
+  margin: 1rem 0;
 }
 
 .programs .container .programs-swiper .swip-container img {
   width: 10rem;
+  margin-right: 1.25rem;
+}
+
+/* features section */
+.dicoding-features-section {
+  height: 110vh;
+}
+.container-features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.features-headline {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2.5rem 0 1rem;
+}
+.features-headline h2 {
+  margin: 1rem 0;
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--font-color);
+}
+.features-headline p {
+  text-align: center;
+  color: var(--font-color);
+  font-weight: 500;
+}
+.dicoding-features {
+  display: flex;
+  padding: 2rem 4rem;
+}
+.dicoding-features .accordion-features {
+  width: 75%;
+  display: flex;
+  align-items: center;
+}
+#accordion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0.5rem 1.5rem 0;
+  background: #fafafa;
+  border-radius: 5px;
+}
+#accordion li {
+  list-style-type: none;
+  width: 100%;
+}
+#accordion li label {
+  width: 95%;
+  font-size: 1.2rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+  cursor: pointer;
+  color: var(--font-color);
+}
+#accordion li label img {
+  width: 15px;
+  transform: rotate(180deg);
+  transition: 0.5s;
+  color: var(--font-color);
+}
+#accordion li label + input[type="checkbox"] {
+  display: none;
+}
+#accordion li .content {
+  width: 95%;
+  max-height: 0;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  color: var(--font-color);
+  transition: max-height 0.5s ease;
+}
+#accordion li label + input[type="checkbox"]:checked + .content {
+  max-height: 400px;
+}
+#accordion li label + input[type="checkbox"]:checked + .content + label img {
+  transform: rotate(0deg);
+}
+.dicoding-features .image-feature {
+}
+.image-feature img {
+  width: 100%;
+  height: auto;
 }

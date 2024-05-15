@@ -21,7 +21,7 @@
   </head>
   <body>
     <!-- header -->
-    <header class="header">
+    <header class="header" id="header">
       <nav class="navbar">
         <div class="navbar-logo">
           <a href="">
@@ -288,12 +288,14 @@
       <!-- programs section -->
       <section class="programs">
         <div class="container">
-          <div class="programs-headline">
-            <h2>Program terbaru kami</h2>
-            <p>
-              Bekerja sama dengan partner, kami menyelenggarakan beberapa
-              program untuk mendukung developer Indonesia.
-            </p>
+          <div class="container-headline">
+            <div class="program-headline">
+              <h2>Program terbaru kami</h2>
+              <p>
+                Bekerja sama dengan partner, kami menyelenggarakan beberapa
+                program untuk mendukung developer Indonesia.
+              </p>
+            </div>
           </div>
           <div class="programs-swiper">
             <div class="arrow">
@@ -301,7 +303,7 @@
               <img src="assets/img/arrow.svg" alt="right-arrow" />
             </div>
             <div class="swip-container">
-              <div class="slide-aws">
+              <!-- <div class="slide-aws">
                 <a href="">
                   <img
                     src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/commons/dos-aws_back_end_academy_2024_image_120324110150.png"
@@ -317,8 +319,8 @@
                     >
                   </div>
                 </a>
-              </div>
-              <!-- <div class="slide-dbs">
+              </div> -->
+              <div class="slide-dbs">
                 <a href="">
                   <img
                     src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/commons/dos-dbs_foundation_coding_camp_image_250124100158.png"
@@ -334,7 +336,112 @@
                     >
                   </div>
                 </a>
-              </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- features section -->
+      <section class="dicoding-features-section">
+        <div class="container-features">
+          <div class="features-headline">
+            <h2>Kenapa Dicoding Academy berbeda</h2>
+            <p>
+              Saatnya bijak memilih sumber belajar. Tak hanya materi yang
+              terjamin, <br />Dicoding Academy juga memiliki reviewer
+              profesional yang akan mengulas kode Anda.
+            </p>
+          </div>
+          <div class="dicoding-features">
+            <div class="accordion-features">
+              <ul id="accordion">
+                <li>
+                  <label for="kurikulum"
+                    >Kurikulum standar industri global
+                    <img src="assets/img/arrow-feature.svg" alt=""
+                  /></label>
+                  <input
+                    type="checkbox"
+                    name="accordion"
+                    id="kurikulum"
+                    checked
+                  />
+                  <div class="content">
+                    <p>
+                      Kurikulum dikembangkan bersama perusahaan dan pemilik
+                      teknologi dunia sesuai kebutuhan industri terkini.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <label for="fleksibility"
+                    >Belajar fleksibel sesuai jadwal Anda
+                    <img src="assets/img/arrow-feature.svg" alt=""
+                  /></label>
+                  <input type="checkbox" name="accordion" id="fleksibility" />
+                  <div class="content">
+                    <p>
+                      Belajar kapan pun, di mana pun, secara mandiri. Bebas
+                      memilih kelas sesuai minat belajar. Akses seumur hidup ke
+                      kelas dan forum diskusi setelah lulus.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <label for="code-review"
+                    >Code Review dari Developer Expert
+                    <img src="assets/img/arrow-feature.svg" alt=""
+                  /></label>
+                  <input type="checkbox" name="accordion" id="code-review" />
+                  <div class="content">
+                    <p>
+                      Validasi skill Anda melalui 1-on-1 Professional Code
+                      Review yang diberikan langsung oleh Developer Expert.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <label for="alumni"
+                    >Alumni terpercaya di berbagai perusahaan
+                    <img src="assets/img/arrow-feature.svg" alt=""
+                  /></label>
+                  <input type="checkbox" name="accordion" id="alumni" />
+                  <div class="content">
+                    <p>
+                      Sertifikat yang membuktikan pengetahuan fundamental
+                      beserta keterampilan nyata yang diinginkan perusahaan
+                      global.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="image-feature">
+              <div class="feature feature-1">
+                <img
+                  src="assets/img/features-section/feature-1.png"
+                  alt="feature-1"
+                />
+              </div>
+              <div class="feature feature-2">
+                <img
+                  src="assets/img/features-section/feature-2.png"
+                  alt="feature-2"
+                />
+              </div>
+              <div class="feature feature-3">
+                <img
+                  src="assets/img/features-section/feature-3.png"
+                  alt="feature-3"
+                />
+              </div>
+              <div class="feature feature-4">
+                <img
+                  src="assets/img/features-section/feature-4.png"
+                  alt="feature-4"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -343,5 +450,7 @@
 
     <!-- footer -->
     <footer></footer>
+
+    <script src="index.js"></script>
   </body>
 </html>
