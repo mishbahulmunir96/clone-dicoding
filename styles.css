@@ -331,25 +331,30 @@ main {
 .dicoding-features-section {
   height: 110vh;
 }
-.container-features {
+.container-features,
+.container-learning-path {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 1px solid blue;
 }
-.features-headline {
+.features-headline,
+.learning-path-headline {
   width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 2.5rem 0 1rem;
 }
-.features-headline h2 {
+.features-headline h2,
+.learning-path-headline h2 {
   margin: 1rem 0;
   font-size: 2rem;
   font-weight: 500;
   color: var(--font-color);
 }
-.features-headline p {
+.features-headline p,
+.learning-path-headline p {
   text-align: center;
   color: var(--font-color);
   font-weight: 500;
@@ -415,4 +420,49 @@ main {
 .image-feature img {
   width: 100%;
   height: auto;
+}
+
+/* learning-path section */
+.learning-path-headline h2 {
+  font-weight: 700;
+}
+.learning-path-partner {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5rem 0;
+  border: 1px solid red;
+}
+.learning-path-partner .learn-partner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid yellow;
+}
+.learn-partner img:nth-of-type(1) {
+  width: 15rem;
+}
+.learn-partner img {
+  width: 12rem;
+  margin: 1rem;
+}
+.logo-learn-partner {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0;
+  border: 1px solid black;
+}
+.logo-learn-partner .img-logo-learn-path {
+  width: 10rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #d4d4d8;
+}
+.logo-learn-partner img {
+  width: auto;
+  height: 90%;
 }
