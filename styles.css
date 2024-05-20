@@ -466,3 +466,84 @@ main {
   width: auto;
   height: 90%;
 }
+
+/* footer section */
+
+.footer .container {
+  display: flex;
+  margin: 0 4rem;
+  border-top: 1px solid var(--font-color);
+  border-bottom: 1px solid var(--font-color);
+}
+.footer-section {
+  margin: 4rem 0;
+}
+.address {
+  width: 40%;
+}
+.address img {
+  width: 8rem;
+  margin: 0 0 1rem;
+}
+.address p {
+  font-size: 0.9rem;
+  margin: 0.2rem 0;
+  color: var(--font-color);
+}
+.address .social-icons {
+  width: 12rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+.address .social-icons img {
+  width: 20px;
+  color: var(--font-color);
+}
+.address .awards p {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--font-color);
+  margin-bottom: 1rem;
+}
+.awards img {
+  width: 70px;
+}
+.about,
+.links {
+  width: 30%;
+}
+.about p {
+  font-size: 1.4rem;
+  color: 181818;
+  font-weight: 700;
+  margin: 0.5rem 0 1rem;
+}
+.about a,
+.links a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--font-color);
+}
+.links {
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.links a {
+  margin: 0.5rem 0;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--font-color);
+  margin: 1.5rem 4rem;
+}
+footer .container a {
+  text-decoration: none;
+  margin: 0 1rem;
+  color: var(--font-color);
+}
