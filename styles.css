@@ -130,7 +130,6 @@ body {
 .dropdown-programs li,
 .dropdown-lainnya li {
   width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
 }
@@ -149,6 +148,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.dropdown-subscription li:first-child a,
+.dropdown-programs li:first-child a,
+.dropdown-lainnya li:first-child a {
+  border-radius: 10px 10px 0 0;
+}
+.dropdown-subscription li:last-child a,
+.dropdown-programs li:last-child a,
+.dropdown-lainnya li:last-child a {
+  border-radius: 0 0 10px 10px;
 }
 .icon img {
   width: 0.9rem;
@@ -169,18 +178,7 @@ body {
   width: 15.2rem;
 }
 .dropdown-programs li a {
-  width: 100%;
-  padding: 0.25rem 1rem;
-}
-.dropdown-subscription li:first-child a,
-.dropdown-programs li:first-child a,
-.dropdown-lainnya li:first-child a {
-  border-radius: 10px 10px 0 0;
-}
-.dropdown-subscription li:last-child a,
-.dropdown-programs li:last-child a,
-.dropdown-lainnya li:last-child a {
-  border-radius: 0 0 10px 10px;
+  padding: 1rem 1rem;
 }
 .dropdown-programs li a p {
   font-size: 0.9rem;
