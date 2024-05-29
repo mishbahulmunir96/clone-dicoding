@@ -118,6 +118,12 @@ body {
   width: 18.5rem;
   height: 9.5rem;
 }
+.container-dropdown {
+  display: none;
+}
+.menu li:hover .container-dropdown {
+  display: block;
+}
 .dropdown-subscription,
 .dropdown-programs,
 .dropdown-lainnya {
